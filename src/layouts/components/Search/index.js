@@ -8,9 +8,8 @@ import { SearchIcon } from '~/components/icon';
 import classNames from 'classnames/bind';
 import styles from './Search.module.scss';
 import { useEffect, useState, useRef } from 'react';
-import { useDebounce } from '~/hook';
-import axios from 'axios';
-import * as searchServices from '~/apiServices/searchService';
+import { useDebounce } from '~/hooks';
+import * as searchServices from '~/services/searchService';
 
 const cx = classNames.bind(styles);
 
