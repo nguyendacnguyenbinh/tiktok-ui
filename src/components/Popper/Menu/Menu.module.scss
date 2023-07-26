@@ -10,6 +10,11 @@
 .menu-popper {
     padding-bottom: 8px;
 }
+
+.menu-body {
+    overflow-y: auto;
+}
+
 //Menu items
 .menu-item {
     width: 100%;
@@ -18,7 +23,7 @@
     font-weight: 500;
     padding: 11px 16px;
     line-height: 1.8rem;
-    font-family: 'IBM Plex Sans', Arial, Helvetica, sans-serif;
+    font-family: var(--font-family);
     &:hover {
         background: rgba(22, 24, 35, 0.03);
     }
@@ -34,6 +39,7 @@
     height: 50px;
     width: 100%;
     margin-top: -8px;
+    flex-shrink: 0;
 }
 
 .button-back {
