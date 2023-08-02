@@ -5,10 +5,11 @@ import styles from './Menu.module.scss';
 
 const cx = classNames.bind(styles);
 
-function MenuItem({ title, to, icon, ...props }) {
+function MenuItem({ title, to, icon, activeIcon }) {
     return (
         <NavLink to={to} className={(nav) => cx('menu-item', { active: nav.isActive })}>
-            {icon}
+            <span className={cx('icon')}>{icon}</span>
+            <span className={cx('active-icon')}>{activeIcon}</span>
             <span className={cx('item')}>{title}</span>
         </NavLink>
     );

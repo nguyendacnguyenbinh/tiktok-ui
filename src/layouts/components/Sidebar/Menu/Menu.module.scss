@@ -15,9 +15,24 @@
 
     &.active {
         color: var(--primary);
+        .icon {
+            display: none;
+        }
+        .active-icon {
+            display: flex;
+        }
     }
 }
 
 .item {
     margin-left: 10px;
+}
+
+.icon,
+.active-icon {
+    display: flex;
+}
+
+.active-icon {
+    display: none;
 }
